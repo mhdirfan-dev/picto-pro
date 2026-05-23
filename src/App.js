@@ -865,50 +865,113 @@ export default function App() {
             
           </div>
 
-          <div style={{textAlign:"center",marginTop:"48px",color:"#2a2a3a",fontSize:"0.8rem",paddingBottom:"40px"}}>
-            PictoPRO — Built phase by phase · 100% local · No API keys · No limits
+        <div style={{textAlign:"center",marginTop:"48px",paddingBottom:"20px"}}>
+          <div style={{fontSize:"0.8rem",color:"#2a2a3a",marginBottom:"8px"}}>
+            PictoPRO — Built phase by phase · Groq AI · No Paid APIs · Free Forever
           </div>
+          <div style={{fontSize:"0.78rem",color:"#6c63ff44"}}>
+            Developed by Mohammed Irfan A
+          </div>
+        </div>
           
         </div>
         
       )}
-      {/* ── FOOTER ── */}
-      <footer style={{
-        position:"relative", zIndex:1,
-        borderTop:"1px solid #1a1a2a",
-        marginTop:"60px", padding:"32px 20px",
-        textAlign:"center",
-        fontFamily:"'Segoe UI',sans-serif",
-      }}>
-        <div style={{
-          display:"inline-block",
-          padding:"20px 36px",
-          background:"#12121a",
-          border:"1px solid #1e1e2e",
-          borderRadius:"16px",
+        {/* ── FOOTER ── */}
+        <footer style={{
+          position: "relative", zIndex: 1,
+          borderTop: "1px solid #1a1a2a",
+          marginTop: "60px", padding: "40px 20px",
+          textAlign: "center",
+          fontFamily: "'Segoe UI',sans-serif",
+          background: "#0a0a0f",
         }}>
           <div style={{
-            fontSize:"0.7rem", color:"#6c63ff",
-            letterSpacing:"2.5px", textTransform:"uppercase",
-            fontWeight:700, marginBottom:"8px",
+            display: "inline-flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "16px",
+            padding: "28px 48px",
+            background: "#12121a",
+            border: "1px solid #1e1e2e",
+            borderRadius: "20px",
+            maxWidth: "420px",
+            width: "100%",
           }}>
-            Developed by
+            {/* Logo */}
+            <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "#fff", letterSpacing: "-0.5px" }}>
+              Picto<span style={{ color: "#6c63ff" }}>PRO</span>
+            </div>
+
+            {/* Divider */}
+            <div style={{ width: "40px", height: "2px", background: "#6c63ff", borderRadius: "2px" }}/>
+
+            {/* Developer */}
+            <div>
+              <div style={{
+                fontSize: "0.68rem", color: "#6c63ff",
+                letterSpacing: "2.5px", textTransform: "uppercase",
+                fontWeight: 700, marginBottom: "6px",
+              }}>
+                Developed by
+              </div>
+              <div style={{ fontSize: "1.15rem", fontWeight: 700, color: "#fff" }}>
+                Mohammed Irfan A
+              </div>
+              <div style={{ fontSize: "0.8rem", color: "#555", marginTop: "3px" }}>
+                Full Stack AI Developer
+              </div>
+            </div>
+
+            {/* Links */}
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" }}>
+              <a 
+                href="https://github.com/mhdirfan-dev"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  fontSize: "0.75rem", color: "#6c63ff",
+                  textDecoration: "none", padding: "4px 12px",
+                  border: "1px solid #6c63ff33", borderRadius: "999px",
+                  transition: "background 0.2s",
+                }}
+              >GitHub</a>
+              
+              <a 
+                href="https://github.com/mhdirfan-dev/picto-pro"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  fontSize: "0.75rem", color: "#6c63ff",
+                  textDecoration: "none", padding: "4px 12px",
+                  border: "1px solid #6c63ff33", borderRadius: "999px",
+                }}
+              >Frontend Repo</a>
+              
+              <a 
+                href="https://github.com/mhdirfan-dev/picto-pro-backend"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  fontSize: "0.75rem", color: "#6c63ff",
+                  textDecoration: "none", padding: "4px 12px",
+                  border: "1px solid #6c63ff33", borderRadius: "999px",
+                }}
+              >Backend Repo</a>
+            </div>
+
+            {/* Bottom line */}
+            <div style={{
+              paddingTop: "14px",
+              borderTop: "1px solid #1a1a2a",
+              width: "100%",
+              fontSize: "0.72rem", color: "#2a2a3a",
+              textAlign: "center",
+            }}>
+              PictoPRO · Groq AI · No Paid APIs · Free Forever
+            </div>
           </div>
-          <div style={{fontSize:"1.2rem", fontWeight:700, color:"#fff"}}>
-            Mohammed Irfan A
-          </div>
-          <div style={{fontSize:"0.8rem", color:"#555", marginTop:"4px"}}>
-            Full Stack AI Developer
-          </div>
-          <div style={{
-            marginTop:"14px", paddingTop:"14px",
-            borderTop:"1px solid #1a1a2a",
-            fontSize:"0.75rem", color:"#2a2a3a",
-          }}>
-            PictoPRO · 100% Local · No API Keys · No Limits
-          </div>
-        </div>
-      </footer>
+        </footer>
     </>
   );
 }
