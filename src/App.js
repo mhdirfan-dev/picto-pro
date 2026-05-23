@@ -511,12 +511,12 @@ export default function App() {
         formData.append("subject", subject);
         formData.append("level", level);
         setSteps(["Uploading image to server..."]);
-        response = await fetch("http://localhost:4000/api/generate/image", {
+        response = await fetch("https://picto-pro-backend.onrender.com/api/generate/image", {
           method: "POST", body: formData,
         });
       } else {
         setSteps(["Sending text to server..."]);
-        response = await fetch("http://localhost:4000/api/generate/text", {
+        response = await fetch("https://picto-pro-backend.onrender.com/api/generate/text", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text: textInput, subject, level }),
