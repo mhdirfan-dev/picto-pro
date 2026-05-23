@@ -923,42 +923,8 @@ export default function App() {
               </div>
             </div>
 
-            {/* Links */}
-            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" }}>
-              <a 
-                href="https://github.com/mhdirfan-dev"
-                target="_blank"
-                rel="noreferrer"
-                style={{
-                  fontSize: "0.75rem", color: "#6c63ff",
-                  textDecoration: "none", padding: "4px 12px",
-                  border: "1px solid #6c63ff33", borderRadius: "999px",
-                  transition: "background 0.2s",
-                }}
-              >GitHub</a>
-              
-              <a 
-                href="https://github.com/mhdirfan-dev/picto-pro"
-                target="_blank"
-                rel="noreferrer"
-                style={{
-                  fontSize: "0.75rem", color: "#6c63ff",
-                  textDecoration: "none", padding: "4px 12px",
-                  border: "1px solid #6c63ff33", borderRadius: "999px",
-                }}
-              >Frontend Repo</a>
-              
-              <a 
-                href="https://github.com/mhdirfan-dev/picto-pro-backend"
-                target="_blank"
-                rel="noreferrer"
-                style={{
-                  fontSize: "0.75rem", color: "#6c63ff",
-                  textDecoration: "none", padding: "4px 12px",
-                  border: "1px solid #6c63ff33", borderRadius: "999px",
-                }}
-              >Backend Repo</a>
-            </div>
+           
+ 
 
             {/* Bottom line */}
             <div style={{
